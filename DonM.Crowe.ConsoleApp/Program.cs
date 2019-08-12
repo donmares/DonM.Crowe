@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DonM.Crowe.Infrastructure.Models;
 using System.Linq;
 using System.Collections.Generic;
+using System.Configuration;
 
 namespace DonM.Crowe.ConsoleApp
 {
@@ -21,7 +22,7 @@ namespace DonM.Crowe.ConsoleApp
         static async Task RunAsync(string[] args)
         {
             // Update port # in the following line.
-            client.BaseAddress = new Uri("https://localhost:44306/api/greeting/");
+            client.BaseAddress = new Uri(ConfigurationManager.AppSettings.Get("greetingUrl"));
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));

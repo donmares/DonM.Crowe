@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DonM.Crowe.API\DonM.Crowe.API.csproj" />
     <ProjectReference Include="..\DonM.Crowe.Application\DonM.Crowe.Application.csproj" />
     <ProjectReference Include="..\DonM.Crowe.Infrastructure\DonM.Crowe.Infrastructure.csproj" />
