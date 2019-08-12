@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+	<TargetLatestRuntimePatch>True</TargetLatestRuntimePatch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DonM.Crowe.API\DonM.Crowe.API.csproj" />
+    <ProjectReference Include="..\DonM.Crowe.Application\DonM.Crowe.Application.csproj" />
+    <ProjectReference Include="..\DonM.Crowe.Infrastructure\DonM.Crowe.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
